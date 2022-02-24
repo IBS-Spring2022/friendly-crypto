@@ -1,0 +1,3 @@
+RIPEMD and wallet generation is in python 
+because i could not find ripemd in java
+and waller generation needed ripemd
