@@ -31,7 +31,7 @@ def wallet_adress(public_key):
     version = '00'
     hashWithVersion = version + ripemd160
     checksum = hashlib.sha256(hashlib.sha256(
-        hashWithVersion.encode('ascii')).digest()).hexdigest()[:7]
+        hashWithVersion.encode('ascii')).digest()).hexdigest()[:8]
     print("checksum:", checksum)
 
     address = hashWithVersion + checksum
