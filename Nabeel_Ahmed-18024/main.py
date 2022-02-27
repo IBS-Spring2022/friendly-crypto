@@ -76,7 +76,7 @@ def generate_wallet_address_from_public_key_P2PKH(public_key, network):
         ripemd_160_hash_with_network_prefix = "01" + ripemd_160_hash
 
     print("RIPEMD with version byte: ",ripemd_160_hash_with_network_prefix)
-    checksum  = generate_sha_256_hash(generate_sha_256_hash(ripemd_160_hash_with_network_prefix))[:7]
+    checksum  = generate_sha_256_hash(generate_sha_256_hash(ripemd_160_hash_with_network_prefix))[:8]
     print("checksum",checksum)
     binary_bitcoin_address = ""+ripemd_160_hash_with_network_prefix + checksum
     print("binary_bitcoin_address",binary_bitcoin_address)
