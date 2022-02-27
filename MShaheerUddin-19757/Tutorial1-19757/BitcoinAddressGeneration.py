@@ -83,8 +83,6 @@ pubKey = pubKey.digest().hex()
 r = hashlib.new('rmd160')
 r.update(pubKey.encode(encoding = 'UTF-8', errors = 'strict'))
 riped = r.digest().hex()
-print("RIPEMD DIGEST:" + riped)
-
 #Prepend Network Bytes
 prependNetworkByte = '00' + riped 
 
