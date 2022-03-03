@@ -1,0 +1,45 @@
+//SPDX-License-Identifier: GPL-3.0
+pragma solidity >=0.6.0 < 0.9.0;
+
+contract ReportCard{
+    
+    address favAddress = 0xEB6743e8f4D79793192Fdfa2119A466B747ffe95;
+    
+    struct Student{
+        uint erp;
+        string name;
+        uint [] marks;
+        
+    }
+    mapping(uint => uint[])public studentRecord;
+    
+
+
+    function addStudent(uint _erp,string memory _name,uint[] memory _marks)public{
+        
+         Student({name:_name,erp:_erp,marks:_marks});
+         studentRecord[_erp]=_marks;
+         }
+
+    function getGrades(uint _erp)public view  returns(uint[] memory)
+    {
+        return studentRecord[_erp];
+    }
+
+
+    
+
+    function averageCalculate(uint _erp)public view returns(uint){
+        uint[] memory _marks= studentRecord[_erp];
+        uint total_marks=0;
+        for (uint j =0; j< _marks.length; j++) {  
+            total_marks=total_marks+_marks[j];
+                  
+      }
+      uint averageMarks= total_marks/3 ;
+      return averageMarks;
+    }
+    
+}
+
+
