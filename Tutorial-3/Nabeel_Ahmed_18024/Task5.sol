@@ -43,13 +43,13 @@ return address(this).balance;
 }
 
 function returnGasUsage() public view returns(uint){
-    // uint startGas = gasleft();
+    uint startGas = gasleft();
     uint sum = 0;
     for(uint i =0; i< data.length; i++){
         sum += data[i];
     }
-    // uint endGas = block.gaslimit;
+    uint endGas = startGas - gasleft();
 
-    return  gasleft();
+    return endGas;
 }
 }
