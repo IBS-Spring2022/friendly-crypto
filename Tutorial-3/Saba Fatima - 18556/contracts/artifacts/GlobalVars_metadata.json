@@ -1,0 +1,58 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "addVals",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Task_5.sol": "GlobalVars"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Task_5.sol": {
+			"keccak256": "0xdf6631ea23ab92142cb930a42a82b6dd11c4436122bb52e99f415593aa8c9b4f",
+			"urls": [
+				"bzz-raw://03b024599e0a292dfd9580ea034c9f3880556b844efe5960e5b2d66a0272b746",
+				"dweb:/ipfs/QmaRDv2Qj1bWEgQVgxPsP1AEtg3JkTZHgkHTPzq9wcqVCe"
+			]
+		}
+	},
+	"version": 1
+}
