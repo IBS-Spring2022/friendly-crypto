@@ -1,0 +1,19 @@
+{
+  "name": "assignment_5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "abdullah_18092.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "base58-js": "^1.0.0",
+    "crypto": "^1.0.1",
+    "crypto-js": "^4.1.1",
+    "node-rsa": "^1.1.1"
+  }
+}
