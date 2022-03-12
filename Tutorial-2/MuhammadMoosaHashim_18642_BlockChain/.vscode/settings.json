@@ -1,0 +1,9 @@
+{
+    "java.project.sourcePaths": ["src"],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "C:\\Users\\LENOVO PC\\Downloads\\jar_files\\javax.activation-api-1.2.0.jar",
+        "C:\\Users\\LENOVO PC\\Downloads\\jar_files\\jaxb-api-2.3.1.jar"
+    ]
+}
