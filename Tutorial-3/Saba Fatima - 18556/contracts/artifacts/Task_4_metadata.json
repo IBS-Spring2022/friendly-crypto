@@ -1,0 +1,130 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_ERP",
+						"type": "string"
+					},
+					{
+						"internalType": "int256[3]",
+						"name": "_grade",
+						"type": "int256[3]"
+					}
+				],
+				"name": "addStudent",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_ERP",
+						"type": "string"
+					}
+				],
+				"name": "avg_Grade",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_ERP",
+						"type": "string"
+					}
+				],
+				"name": "getGrade",
+				"outputs": [
+					{
+						"internalType": "int256[3]",
+						"name": "",
+						"type": "int256[3]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "students",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "ERP",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Task_4.sol": "Task_4"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Task_4.sol": {
+			"keccak256": "0xde3dde462eb053c5314885af9acf4d0b60467b5f166c050ab84021949021f01b",
+			"urls": [
+				"bzz-raw://45bf3f04a208cc3cff0925826247fef5ea97521065df07c3ba4df8f57628e691",
+				"dweb:/ipfs/QmQkXxu4r1jaB6w2XnwmxuinQGEMssZ2WMu9g4NvrxqJVx"
+			]
+		}
+	},
+	"version": 1
+}
