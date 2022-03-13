@@ -1,0 +1,34 @@
+//SPDX-License-Identifier: GPL-3.0
+
+ pragma solidity >= 0.6.0 < 0.9.0;
+
+ contract Task4 {
+    
+    struct Student {
+        uint erp;
+        string Name;
+        uint[] grade;
+    }
+    mapping(uint => Student) public _student;
+
+    function addStudent(uint _erp, string memory _name, uint[] memory _grade) public{
+        _student[_erp] =  Student({erp:_erp, Name:_name, grade: _grade });
+    }
+
+    function get_Grades(uint _erp) view public returns (uint[] memory){
+        return _student[_erp].grade;
+    }
+
+    function average_Grades(uint _erp) view public returns (uint){
+        Student memory student = _student[_erp];
+        uint average = 0;
+        uint x = student.grade.length;
+        uint i = 0; 
+       
+        while (i<x) {
+            average += student.grade[i];
+            i++ ;
+        }
+        return average / x;
+    }
+} 
