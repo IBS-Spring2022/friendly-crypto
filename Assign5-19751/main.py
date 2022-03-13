@@ -23,12 +23,12 @@ if __name__== "__main__":
     myName = b"Abdul Moiz Choudry"
     #keyPair = RSA.generate(2048)
     #publickey = keyPair.publickey()
-    #with open('mypvtkey.pem','wb') as f:
-    #    f.write(keyPair.exportKey('PEM'))
+   # with open('mypvtkey.pem','wb') as f:
+   #     f.write(keyPair.exportKey('PEM'))
     #    f.close()
-    #with open('myPubkey.pem', 'wb') as f:
-    #   f.write(publickey.exportKey('PEM'))
-    #   f.close()
+   # with open('muPubkey.pem', 'wb') as f:
+   #     f.write(publickey.exportKey('PEM'))
+   #     f.close()
 
     pvtKey= RSA.importKey(open('myPvtKey.pem').read())
     pubKey= RSA.importKey(open('myPubKey.pem').read())
