@@ -12,7 +12,7 @@ function gas() public returns(uint){
 
     c = a+b;
 
-    return gasStart;
+    return gasStart-gasleft;
 }
 
 }
