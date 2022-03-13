@@ -15,12 +15,12 @@ contract A{
 contract B is A {
 
 
-    function callingF3fromDerived() public view {
+    function callingF3fromDerived() public view returns(int) {
         //we can also do super.f3() incase derving contract also has a fn named f3 or A.f3(); if multiple inheritance
  
     //     super.f3();
     //     A.f3();
-    f3();
+   return f3();
 
      }
 }
