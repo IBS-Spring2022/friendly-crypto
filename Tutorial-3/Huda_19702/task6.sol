@@ -11,7 +11,7 @@ contract A{
     
 }
 
-//trying to push
+
 contract B is A {
     int public y = f3();
 }
