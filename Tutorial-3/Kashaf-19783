@@ -1,0 +1,118 @@
+//SPDX-License-Identifier: GPL-3.0
+
+pragma solidity >=0.5.0 <0.9.0;
+
+contract CryptosToken{
+    string public constant name = "Cryptos";
+    uint public supply;
+
+
+function set(uint _supply) public{
+        supply =_supply;
+    }
+
+    function get() public view returns(uint) {
+        return supply;
+    }
+}
+
+contract CryptosToken{
+    string public constant name = "Cryptos";
+    uint public supply;
+    address public owner;
+    
+constructor(uint _supply){
+    supply=_supply;
+    owner = msg.sender;
+}
+
+function set(uint _supply) public{
+        supply =_supply;
+    }
+
+    function get() public view returns(uint) {
+        return supply;
+    }
+}
+//SPDX-License-Identifier: GPL-3.0
+
+pragma solidity >=0.5.0 <0.9.0;
+
+contract MyTokens{
+    string[] public tokens = ['BTC', 'ETH'];
+    
+    function changeTokens(string memory s,uint index) public{
+        delete tokens[index];
+        tokens[index]=s;
+       
+    }
+    
+}
+//SPDX-License-Identifier: GPL-3.0
+ 
+pragma solidity >=0.5.0 <0.9.0;
+ 
+contract GlobalVars{
+
+
+    
+function performsAdition() internal pure{  
+    uint a=1;
+    uint b=2;
+    uint add=a/b;
+}
+
+function getgas() public view returns(uint){
+    uint u0 = gasleft();
+    performsAdition();
+    uint u1 = gasleft();
+
+   uint diff = u0 - u1;
+
+    return diff;
+
+}
+}
+//SPDX-License-Identifier: GPL-3.0
+ 
+pragma solidity >=0.5.0 <0.9.0;
+ 
+contract studentLedger{
+    struct student{
+        string name;
+        int[3] grades;
+        uint erp;
+    }
+
+    mapping(uint => student) public Students;
+
+    function addStudent(uint _erp,string memory _name, int[3] memory _grade) public{
+        Students[_erp]=student(_erp,_name,_grade);
+    }
+     function getGrade(uint _erp) public view returns (int[3] memory _grade){
+        return Students[_erp]._grades;
+    }
+    function getAvgGrades(uint _erp) public view returns (int grade){
+        return ((Students[_erp].grades[0]+Students[erp].grades[1]+Students[erp].grades[2])/3);
+    }
+     
+}
+//SPDX-License-Identifier: GPL-3.0
+ 
+pragma solidity >=0.5.0 <0.9.0;
+ 
+contract A{
+    int internal x = 10;
+    
+    function f3() external view returns(int){
+        return x;
+    }
+    
+}
+
+contract B is A{
+    A a;
+    function getx() external view returns(int){
+        return (a.f3());
+    }
+}
